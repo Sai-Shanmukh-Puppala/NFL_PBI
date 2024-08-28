@@ -10,8 +10,9 @@ The dataset is structured using a star schema, which simplifies querying and enh
 - **Dimension Tables**:
   - **Players**: Information about the players, including player names, positions, and team associations.
   - **Teams**: Contains the team names and corresponding team IDs, along with URLs for the team logos.
+  - **Opponents**: Contains the opponent team names and corresponding team IDs, along with URLs for the team logos.
   - **Dates**: Includes information about the season and week, allowing for time-based analysis.
-  - **Positions**: Categorizes players into broader position groups such as QB, RB, WR, etc.
+  - **player_stats**: Consists of game-wise player stats.
 
 ## Key Features
 - **Position-Specific Metrics**: The dashboard dynamically displays metrics relevant to the selected player's position. For example, when viewing a quarterback, you'll see metrics like passing yards and touchdowns.
@@ -21,5 +22,5 @@ The dataset is structured using a star schema, which simplifies querying and enh
 
 ## How to Use
 1. **Download the Repository**: Clone or download this repository to your local machine.
-2. **Open in PowerBI Desktop**: Load the `PlayerPerformanceDashboard.pbix` file into PowerBI Desktop.
+2. **Open in PowerBI Desktop**: Load the `NFL Player Performance.pbix` file into PowerBI Desktop.
 3. **Interact with the Dashboard**: Use the slicers to filter by player and season, and observe the dynamic updates in the metrics and visuals.
