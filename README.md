@@ -1,7 +1,7 @@
 # NFL Player Performance Dashboard
 
 ## Overview
-This repository contains a PowerBI dashboard designed to analyze NFL player performance. The dashboard leverages a star schema design, focusing on key metrics that provide insights into player performance across different positions. Our goal was to create a streamlined and user-friendly tool that can be used by analysts, fans, and other stakeholders interested in NFL statistics.
+This repository contains a simplified version of a PowerBI dashboard designed to analyze NFL player performance. The dashboard leverages a star schema design, focusing on key metrics that provide insights into player performance across different positions. Our goal was to create a streamlined and user-friendly tool that can be used by analysts, fans, and other stakeholders interested in NFL statistics.
 
 ## Star Schema Implementation
 The dataset is structured using a star schema, which simplifies querying and enhances the performance of the PowerBI report. The star schema consists of the following components:
@@ -9,10 +9,10 @@ The dataset is structured using a star schema, which simplifies querying and enh
 - **Fact Table (`PlayerStats`)**: Contains the performance metrics for each player, including statistics like passing yards, rushing touchdowns, sacks, and more.
 - **Dimension Tables**:
   - **Players**: Information about the players, including player names, positions, and team associations.
-  - **Teams**: Contains the team names and corresponding team IDs, along with URLs for the team logos.
-  - **Opponents**: Contains the opponent team names and corresponding team IDs, along with URLs for the team logos.
+  - **Teams**: Contains the team names and corresponding team IDs.
+  - **Opponents**: Contains the opponent team names and corresponding team IDs.
   - **Dates**: Includes information about the season and week, allowing for time-based analysis.
-  - **player_stats**: Consists of game-wise player stats.
+  - **player_stats**: Consists of game-wise player stats for each player.
 
 ## Key Features
 - **Position-Specific Metrics**: The dashboard dynamically displays metrics relevant to the selected player's position. For example, when viewing a quarterback, you'll see metrics like passing yards and touchdowns.
